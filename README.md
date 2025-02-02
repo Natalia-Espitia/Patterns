@@ -8,9 +8,11 @@ La herramienta Apache Maven se usa para gestionar y manejar proyectos de softwar
 Ingresar a la página de la herramienta y entender:
 
 - Cuál es su mayor utilidad
+
     Su mayor utilidad es gestionar y automatizar el ciclo de vida del desarrollo de proyectos de software.
 
 - Fases de maven
+
     - validate: Valida que el proyecto sea correcto y que la informacion este disponiblel.
     - compile: Compila el codigo fuente del proyecto.
     - test: Prueba el codigo fuente compilado utilizando pruebas unitarias adecuadas, estas pruebas no requieren que el codigo se empaquete o implemente.    
@@ -20,12 +22,14 @@ Ingresar a la página de la herramienta y entender:
     - deploy: Se hace en el entorno de compilacion, copia el paquete final en el repositorio remoto para compartirlo con otros desarrolladores. 
 
 - Ciclo de vida de la construcción
+
     Son tres ciclos de vida principales.
     - default: Es el mas importante y cubre todas las fases necesarias para construir, probar y desplegar un proyecto.
     - clean: Se utiliza para limpiar el proyecto, eliminando los archivos generados en compilaciones anteriores. 
     - site: Genera documentación del proyecto y publica un sitio web con informacion relevante. 
 
 - Para qué sirven los plugins
+
     Los plugins son herramientas de Maven y permiten ejecutar tareas especificas en las distintas fases del ciclo de vida de construccion. Los plugins son responsables de realizar las acciones concretas en cada fase. Sirve para:
     - Automatizar tareas especificas.
     - Personalizar el ciclo de vida.
@@ -33,21 +37,25 @@ Ingresar a la página de la herramienta y entender:
     - Facilitar la integracion con herramientas externas.  
 
 - Qué es y para qué sirve el repositorio central de maven
+
     El repositorio central es un almacen en linea que contiene una amplia coleccion de bibliotecas, frameworks, plugins y dependencias utilizadas en proyectos Maven. 
     Es un repositorio publico y centralizado, accesible a traves de internet, donde se almacenan artefactos listos para ser usados en proyectos Maven.
     Provee dependencias, ahorra tiempo, gestiona versiones, acceso global y resolucion de dependencias transitivas. 
 
 ### Ejercicio de las Figuras
 - Crear un proyecto con Maven
+
 ![](/assets/images/1.png)
 ![](/assets/images/2.png)
 
 ### Ajustar algunas configuraciones en el proyecto
 - Edite el archivo pom.xml
+
 ![](/assets/images/3.png)
 
 ### Compilar y Ejecutar
 - Para compilar ejecute el comando: mvn package
+
 ![](/assets/images/4.1.png)
 ![](/assets/images/4.2.png)
 
