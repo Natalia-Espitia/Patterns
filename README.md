@@ -52,6 +52,7 @@ Ingresar a la página de la herramienta y entender:
 ![](/assets/images/4.2.png)
 
 - Busque cuál es el objetivo del parámetro "package" y qué otros parámetros se podrían enviar al comando mvn.
+
     Su objetivo es compilar el código fuente, ejecutar pruebas y empaquetar el proyecto en un archivo distribuible, como un archivo .jar, en el directorio target. Es un comando crucial para obtener un paquete ejecutable de tu aplicación Java.
 
     - mvn clean install: este comando ayuda a ejecutar un ciclo de vida de compilación limpio e instala la fase de compilación en el ciclo de compilación predeterminado.
