@@ -72,3 +72,27 @@ Ingresar a la página de la herramienta y entender:
 
 ![](/assets/images/5.1.png)
 ![](/assets/images/5.2.png)
+
+- Realice el cambio en la clase App.java para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación.
+- Utilizar la primera posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible, se debe mantener el saludo como se encuentra actualmente:
+![](/assets/images/6.1.png)
+
+- Buscar cómo enviar parámetros al plugin "exec".
+Con el comando: mvn exec:java -D"exec.mainClass"="Ruta a la clase main" -D"exec.args"="Parametro a pasar"
+
+- Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: Hello World!
+![](/assets/images/6.2.png)
+
+- Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
+![](/assets/images/6.3.png)
+
+- Ejecutar la clase con su nombre y apellido como parámetro. ¿Qué sucedió?
+Solo tomo el nombre y no el apellido.
+![](/assets/images/6.4.png)
+
+- Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido.
+Se modifico el codigo de la clase App.java
+![](/assets/images/6.5.png)
+
+- Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
+![](/assets/images/6.6.png)
