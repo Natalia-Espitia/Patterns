@@ -68,3 +68,7 @@ Ingresar a la página de la herramienta y entender:
     - mvn test: Maven también proporciona la facilidad de probar unidades de códigos particulares. Ejecuta las pruebas utilizando marcos de prueba adecuados.
     - mvn deploy: implementa el código para el proyecto. Esta implementación se realiza en un entorno de integración o lanzamiento. Copia todo el paquete final en el repositorio remoto y está disponible para compartir con otros desarrolladores.
     - mvn site: este comando crea un sitio que se basa en la información del pom del proyecto.
+- Busque cómo ejecutar desde línea de comandos, un proyecto maven y verifique la salida cuando se ejecuta con la clase App.java como parámetro en "mainClass".
+
+![](/assets/images/5.1.png)
+![](/assets/images/5.2.png)
