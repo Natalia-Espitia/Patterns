@@ -75,24 +75,52 @@ Ingresar a la página de la herramienta y entender:
 
 - Realice el cambio en la clase App.java para crear un saludo personalizado, basado en los parámetros de entrada a la aplicación.
 - Utilizar la primera posición del parámetro que llega al método "main" para realizar elsaludo personalizado, en caso que no sea posible, se debe mantener el saludo como se encuentra actualmente:
+
 ![](/assets/images/6.1.png)
 
 - Buscar cómo enviar parámetros al plugin "exec".
 Con el comando: mvn exec:java -D"exec.mainClass"="Ruta a la clase main" -D"exec.args"="Parametro a pasar"
 
 - Ejecutar nuevamente la clase desde línea de comandos y verificar la salida: Hello World!
+
 ![](/assets/images/6.2.png)
 
 - Ejecutar la clase desde línea de comandos enviando su nombre como parámetro y verificar la salida. Ej: Hello Pepito!
+
 ![](/assets/images/6.3.png)
 
 - Ejecutar la clase con su nombre y apellido como parámetro. ¿Qué sucedió?
 Solo tomo el nombre y no el apellido.
+
 ![](/assets/images/6.4.png)
 
 - Verifique cómo enviar los parámetros de forma "compuesta" para que el saludo se realice con nombre y apellido.
 Se modifico el codigo de la clase App.java
+
 ![](/assets/images/6.5.png)
 
 - Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
+
 ![](/assets/images/6.6.png)
+
+### Hacer esqueleto de la aplicacion 
+- Cree el paquete edu.eci.cvds.patterns.shapes y el paquete edu.eci.cvds.patterns.shapes.concrete.
+
+![](/assets/images/7.1.png)
+
+-Cree una interfaz llamada Shape.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes de la siguiente manera:
+
+![](/assets/images/7.2.png)
+
+- Cree una enumeración llamada RegularShapeType.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes así:
+
+![](/assets/images/7.3.png)
+
+- En el directorio src/main/java/edu/eci/cvds/patterns/shapes/concrete cree las diferentes clases (Triangle, Quadrilateral, Pentagon, Hexagon), que implementen la interfaz creada y retornen el número correspondiente de vértices que tiene la figura.
+
+![](/assets/images/7.4.png)
+![](/assets/images/7.5.png)
+
+- Cree el archivo ShapeMain.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes con el metodo main:
+
+![](/assets/images/7.6.png)
