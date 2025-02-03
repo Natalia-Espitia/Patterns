@@ -124,3 +124,39 @@ Se modifico el codigo de la clase App.java
 - Cree el archivo ShapeMain.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes con el metodo main:
 
 ![](/assets/images/7.6.png)
+
+- Analice y asegúrese de entender cada una de las instrucciones que se encuentran en todas las clases que se crearon anteriormente. Cree el archivo ShapeFactory.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes implementando el patrón fábrica, haciendo uso de la instrucción switch-case de Java y usando las enumeraciones.
+
+- ¿Cuál fábrica hiciste?
+
+Se implementó el patrón Simple Factory.
+
+![](/assets/images/8.1.png)
+
+- ¿Cuál es mejor?
+
+Depende del caso, en este caso escogimos simple factory ya que este patrón funciona bien cuando tenemos un número reducido de tipos de objetos que pueden ser creados, como en este caso con las formas geométricas, la implementación con switch-case es directa y fácil de entender, lo cual es ideal cuando la creación de objetos se basa en un número limitado de tipos.
+
+Sin embargo, si en el futuro se necesitara expandir la cantidad de formas (por ejemplo, añadiendo más clases complejas que se dividen en subcategorías), un patrón Abstract Factory podría ser más adecuado. Este patrón es más flexible y se usa para gestionar familias de objetos relacionados sin especificar las clases concretas.
+
+- Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
+
+- Sin parámetros
+
+![](/assets/images/9.1.png)
+
+- Parámetro: qwerty
+
+![](/assets/images/9.2.png)
+
+- Parámetro: pentagon
+
+![](/assets/images/9.3.png)
+
+- Parámetro: Hexagon
+
+![](/assets/images/9.4.png)
+
+- ¿Cuál(es) de las anteriores instrucciones se ejecutan y funcionan correctamente y por qué?
+
+Todas se ejecutaron y funcionaron correctamente ya que para la instrucción sin parámetros y con el parámetro "qwerty" dio el mensaje de excepción correcto, por otra parte con el parámetro "pentagon" la aplicación esta construida de tal forma que las figuras su primera letra debe ser en mayúscula, esto se podria mejorar haciendo que la aplicación sea sensible a mayúsculas y minúsculas, por último, con el parámetro "Hexagon" dió una salida correcta.
