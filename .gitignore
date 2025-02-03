@@ -439,6 +439,10 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+.mvn/
+.mvn/*
+!.mvn/jvm.config
+!.mvn/maven.config
 
 # Eclipse m2e generated files
 # Eclipse Core
